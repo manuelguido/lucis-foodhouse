@@ -1,0 +1,46 @@
+<template>
+  <mdb-navbar id="main-navbar" class="bg-white-a px-lg-5 fixed-top uns shadow-none" light>
+    <router-link to="/" class="navbar-brand">
+      <img class="logo" src="../assets/logo.png">
+    </router-link>
+    <mdb-navbar-toggler>
+      <mdb-navbar-nav class="text-right" right>
+        <router-link class="nav-link bebas mr-4" to="/" active>Inicio</router-link>
+        <router-link class="nav-link bebas mr-4" to="/combos" active>Nuestros combos</router-link>        
+        <router-link class="nav-link bebas mr-4 mr-lg-0" to="/contacto" active>Contacto</router-link>
+      </mdb-navbar-nav>
+    </mdb-navbar-toggler>
+  </mdb-navbar>
+</template>
+
+<script>
+  import { mdbNavbar, mdbNavbarToggler, mdbNavbarNav } from 'mdbvue';
+  export default {
+    name: 'NavbarPage',
+    components: {
+      mdbNavbar,
+      mdbNavbarToggler,
+      mdbNavbarNav
+    }
+  }
+</script>
+
+<style>
+#main-navbar {
+    box-shadow: 0 none !important;
+}
+@media (min-width: 992px) {
+    .logo { width: 130px; }
+}
+@media (max-width: 992px) {
+    .logo {
+        width: 95px;
+    }
+}
+.nav-link {
+    color: var(--black-a) !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 28px;
+}
+</style>
