@@ -1,8 +1,25 @@
 <template>
-  <div id="app" class="padding">
-    <router-view/>
+  <div id="app">
+    <navbar/>
+    <div class="content">
+      <router-view/>
+    </div>
+    <lucis-footer/>
   </div>
 </template>
+
+<script>
+import navbar from '@/components/Navbar.vue'
+import lucisFooter from '@/components/Footer.vue'
+
+export default {
+  name: 'home',
+  components: {
+    navbar,
+    'lucis-footer': lucisFooter
+  }
+}
+</script>
 
 <style>
 @import './assets/css/lightseed.css';
@@ -22,7 +39,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: left;
-    color: #1d252d;
+    color: var(--black-a);
     margin: 0;
     padding: 0;
     -webkit-touch-callout: none;
@@ -39,7 +56,8 @@
 .montserrat { font-family: 'Montserrat', sans-serif; }
 .fredoka { font-family: 'Fredoka One', cursive; }
 .nosifer { font-family: 'Nosifer', cursive; } */
-.padding {
+.content {
   padding-top: 15vh !important;
+  min-height: calc(100vh - 70px);
 }
 </style>

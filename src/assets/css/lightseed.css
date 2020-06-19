@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 :root {
     /* Main Pallete */
-    --color-a:rgb(43, 51, 80);
+    --color-a:#ffe033;
     --color-a-light:rgb(43, 51, 80);
     --color-b: #2D5DD9;
     --color-b-light: #6592fe;
@@ -17,13 +17,13 @@
     --white-d: #ddd;
 
     /* Black */
-    --black-a: #1d252d;
+    --black-a: #1D252D;
     --black-b: #505565;
     --black-c: #8c92a6;
     --black-d: #aaa;
 
     /* Traditional */
-    --seed-primary: #444BF8;
+    --seed-primary: #2C1EE8;
     --seed-primary-dark: #251f87;
     --seed-primary-light: #E9EAFD;
 
@@ -51,7 +51,7 @@
     --seed-cancel-dark: #8c92a6;
     --seed-cancel-light: #8c92a6;
 
-    --seed-link: #444BF8;
+    --seed-link: #2C1EE8;
     --seed-link-dark: #0e32c2;
     --seed-link-light: #4a4fd6;
 }
@@ -157,7 +157,7 @@ input[type=number] {
     Font
 --------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6, p, label {
-    color: var(--black-b);
+    color: var(--black-a);
 }
 a.link {
     color: var(--seed-link-dark);

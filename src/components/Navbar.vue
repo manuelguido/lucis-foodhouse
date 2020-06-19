@@ -1,9 +1,9 @@
 <template>
-  <mdb-navbar id="main-navbar" class="bg-white-a px-lg-5 fixed-top uns shadow-none" light>
-    <router-link to="/" class="navbar-brand">
+  <mdb-navbar id="main-navbar" class="px-lg-5 fixed-top uns shadow-none" light>
+    <router-link to="/" class="logo-link">
       <img class="logo" src="../assets/logo.png">
     </router-link>
-    <mdb-navbar-toggler>
+    <mdb-navbar-toggler class="ml-auto">
       <mdb-navbar-nav class="text-right" right>
         <router-link class="nav-link bebas mr-4" to="/" active>Inicio</router-link>
         <router-link class="nav-link bebas mr-4" to="/combos" active>Nuestros combos</router-link>        
@@ -27,15 +27,20 @@
 
 <style>
 #main-navbar {
-    box-shadow: 0 none !important;
+  background: none !important;
+  box-shadow: 0 none !important;
 }
 @media (min-width: 992px) {
     .logo { width: 130px; }
 }
 @media (max-width: 992px) {
-    .logo {
-        width: 95px;
-    }
+  #navbarSupportedContent {
+    background: var(--white-a) !important;
+    border-bottom: 14px solid var(--color-a);
+  }
+  .logo {
+    width: 95px;
+  }
 }
 .nav-link {
     color: var(--black-a) !important;
