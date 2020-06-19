@@ -1,22 +1,17 @@
 <template>
   <div id="app">
     <navbar/>
-    <div class="content">
-      <router-view/>
-    </div>
-    <lucis-footer/>
+    <router-view/>
   </div>
 </template>
 
 <script>
 import navbar from '@/components/Navbar.vue'
-import lucisFooter from '@/components/Footer.vue'
 
 export default {
   name: 'home',
   components: {
-    navbar,
-    'lucis-footer': lucisFooter
+    navbar
   }
 }
 </script>
@@ -35,19 +30,20 @@ export default {
 */
 
 #app {
-    font-family: 'Bebas Neue', cursive;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: left;
-    color: var(--black-a);
-    margin: 0;
-    padding: 0;
-    -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
+  font-family: 'Bebas Neue', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  min-height: 100vh;
+  color: var(--black-a);
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .bebas { font-family: 'Bebas Neue', cursive; }
 .megrim { font-family: 'Megrim', cursive; }
@@ -56,8 +52,14 @@ export default {
 .montserrat { font-family: 'Montserrat', sans-serif; }
 .fredoka { font-family: 'Fredoka One', cursive; }
 .nosifer { font-family: 'Nosifer', cursive; } */
-.content {
-  padding-top: 15vh !important;
-  min-height: calc(100vh - 70px);
+.title {
+  font-size: 3.4em;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.075em;
 }
+
+.outer-content {
+  min-height: calc(100vh - 50px);
+}
+
 </style>

@@ -1,28 +1,35 @@
 <template>
-  <div class="container uns">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 id="main-title" class="bebas black-a">LUCI'S FOODOHOUSE</h1>
-        <span class="align-middle">
-          <i class="fas fa-circle align-middle black-a"></i>
-          <h1 id="sub-title" class="align-middle megrim display-inline mx-3">Hamburguesas gourmet</h1>
-          <i class="fas fa-circle align-middle black-a"></i>
-        </span>
-      </div>
+  <div class="home-page">
+    <div class="container-fluid outer-content w-100 uns">
+      <lucis-header/>
     </div>
+    <lucis-footer/>
   </div>
 </template>
 
-<style style>
-.fa-circle {
-  font-size: 8px !important;
+<script>
+import lucisFooter from '@/components/Footer.vue'
+import lucisHeader from '@/components/Header.vue'
+
+export default {
+  name: 'home',
+  components: {
+    'lucis-footer': lucisFooter,
+    'lucis-header': lucisHeader
+  }
 }
-@media (min-width: 992px) {
-  #main-title { font-size: 5.6em; }
-  #sub-title { font-size: 2.3em; }
-}
-@media (max-width: 992px) {
-  #main-title { font-size: 4em; }
-  #sub-title { font-size: 1.8em; }
+</script>
+
+<style scoped>
+.home-page {
+  /* The image used */
+  background-image: url("../assets/home-banner.webp");
+  /* Full height */
+  height: 100vh !important;
+  width: 100vw;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 </style>
