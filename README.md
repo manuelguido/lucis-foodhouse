@@ -1,4 +1,3 @@
-
 <h1 align="center">Luci's Foodhouse</h1>
 
 <p align="center">
