@@ -1,7 +1,8 @@
 <template>
   <div class="home-page">
-    <div class="container-fluid outer-content w-100 uns">
+    <div class="container-fluid text-center outer-content w-100 uns">
       <lucis-header/>
+      <img class="mobile-image web-hide" src="../assets/home-image.jpg">
     </div>
     <lucis-footer/>
   </div>
@@ -21,15 +22,21 @@ export default {
 </script>
 
 <style scoped>
-.home-page {
-  /* The image used */
-  background-image: url("../assets/home-banner.webp");
-  /* Full height */
-  height: 100vh !important;
-  width: 100vw;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+@media (min-width: 992px) {
+  .home-page {
+    /* The image used */
+    background-image: url("../assets/home-banner.webp");
+    /* Full height */
+    height: 100vh !important;
+    width: 100vw;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+.mobile-image {
+  width: 90%;
+  margin: 0 auto 40px auto;
 }
 </style>

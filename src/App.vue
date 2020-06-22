@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <navbar/>
+    <whatsapp/>
     <router-view/>
   </div>
 </template>
 
 <script>
 import navbar from '@/components/Navbar.vue'
+import whatsapp from '@/components/WhatsappIcon.vue'
 
 export default {
   name: 'home',
   components: {
-    navbar
+    navbar,
+    whatsapp
   }
 }
 </script>
@@ -21,13 +24,12 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
-/*
-@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
-*/
+
 
 #app {
   font-family: 'Bebas Neue', cursive;
@@ -47,19 +49,32 @@ export default {
 }
 .bebas { font-family: 'Bebas Neue', cursive; }
 .megrim { font-family: 'Megrim', cursive; }
-/* .expletus { font-family: 'Expletus Sans', cursive; }
-.majorm { font-family: 'Major Mono Display', monospace; }
+/* .expletus { font-family: 'Expletus Sans', cursive; } */
+/* .majorm { font-family: 'Major Mono Display', monospace; } */
 .montserrat { font-family: 'Montserrat', sans-serif; }
-.fredoka { font-family: 'Fredoka One', cursive; }
-.nosifer { font-family: 'Nosifer', cursive; } */
+/* .fredoka { font-family: 'Fredoka One', cursive; } */
+.nosifer { font-family: 'Nosifer', cursive; }
 .title {
-  font-size: 3.4em;
   font-family: 'Bebas Neue', cursive;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.07em;
 }
 
-.outer-content {
-  min-height: calc(100vh - 50px);
+@media (min-width: 992px) {
+  .title {
+    font-size: 3.3em;
+  }
+  .outer-content {
+    min-height: calc(100vh - 50px);
+  }
+}
+@media (max-width: 992px) {
+  .title {
+    font-size: 2.5em;
+  }
+  .outer-content {
+    min-height: calc(100vh - 50px);
+    /* min-height: calc(100vh - 70px); */
+  }
 }
 
 </style>

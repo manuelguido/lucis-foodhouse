@@ -4,7 +4,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Combos from './views/Combos.vue'
 import Contact from './views/Contact.vue'
-import Error404 from './views/Contact.vue'
+import Error404 from './views/Error404.vue'
 
 Vue.use(Router)
 

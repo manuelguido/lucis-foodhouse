@@ -1,11 +1,12 @@
 
+<h1 align="center">Luci's Foodhouse</h1>
+<h2 align="center">Hamburgesas gourmet</h2>
+
 <p align="center">
   <a href="http://mdbootstrap.com/docs/vue/">
-    <img width="500" src="https://mdbootstrap.com/img/Marketing/general/logo/huge/mdb-vue.png">
+    <img width="500" src="/gitimages/mobile1.png">
   </a>
 </p>
-
-<h1 align="center">Vue Bootstrap with Material Design</h1>
 
 <p align="center">
   Based on the latest <b>Bootstrap 4</b> and Vue <b>2.6.11</b>.

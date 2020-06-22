@@ -1,9 +1,9 @@
 <template>
-  <mdb-navbar id="main-navbar" class="pt-4 px-lg-5 fixed-top uns shadow-none" light>
-    <router-link to="/" class="logo-link">
+  <mdb-navbar id="main-navbar" class="bg-white-a py-2 pb-lg-0 pt-lg-3 px-lg-5 fixed-top uns shadow-none" light>
+    <router-link to="/" class="logo-link ml-lg-4">
       <img class="logo" src="../assets/logo.png">
     </router-link>
-    <mdb-navbar-toggler class="ml-auto">
+    <mdb-navbar-toggler class="ml-auto mr-lg-4">
       <mdb-navbar-nav class="text-right" right>
         <router-link class="nav-link bebas mr-5" to="/" active>Inicio</router-link>
         <router-link class="nav-link bebas mr-5" to="/combos" active>Nuestros combos</router-link>        
@@ -27,7 +27,7 @@
 
 <style>
 #main-navbar {
-  background: none !important;
+  /* background: none !important; */
   box-shadow: 0 none !important;
 }
 @media (min-width: 992px) {
