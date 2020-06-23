@@ -25,10 +25,10 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap'); */
 
 
 #app {
@@ -50,10 +50,10 @@ export default {
 .bebas { font-family: 'Bebas Neue', cursive; }
 .megrim { font-family: 'Megrim', cursive; }
 /* .expletus { font-family: 'Expletus Sans', cursive; } */
-/* .majorm { font-family: 'Major Mono Display', monospace; } */
+.majorm { font-family: 'Major Mono Display', monospace; }
 .montserrat { font-family: 'Montserrat', sans-serif; }
 /* .fredoka { font-family: 'Fredoka One', cursive; } */
-.nosifer { font-family: 'Nosifer', cursive; }
+/* .nosifer { font-family: 'Nosifer', cursive; } */
 .title {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 0.07em;
