@@ -5,9 +5,9 @@
       <mdbRow class="mt-lg-5 pt-3">
         <mdb-col col="12" lg="6" class="text-center">
           <h1 class="title mb-4 mb-lg-5">CONTACTATE CON NOSOTROS</h1>
-					<a class="item" target="_black" href="https://api.whatsapp.com/send?phone=+5492284624049">2284624049</a>
-					<a class="item" target="_black" href="https://www.instagram.com/lucisfoodhouse/">@lucisfoodhouse</a>
-					<p class="item">lucisfoodhouse@gmail.com</p>
+					<a class="item" target="_black" href="https://api.whatsapp.com/send?phone=+5492284624049"><i class="fab fa-whatsapp mr-3 white-d"></i>2284624049</a>
+					<a class="item" target="_black" href="https://www.instagram.com/lucisfoodhouse/"><i class="fab fa-instagram mr-3 white-d"></i>@lucisfoodhouse</a>
+					<p class="item"><i class="fas fa-envelope mr-3 white-d"></i>lucisfoodhouse@hotmail.com</p>
         </mdb-col>
 				<mdb-col col="12" lg="6" class="mt-5 mt-lg-0 text-center">
           <h1 class="title mb-4 mb-lg-5">DONDE ENCONTRARNOS</h1>
@@ -58,7 +58,6 @@ export default {
 	color: var(--black-a);
 	margin: 0 0 20px 0 !important;
 	font-family: 'Bebas Neue', cursive;
-	font-size: 2.2em;
 	letter-spacing: 0.05em;
 }
 @media (min-width: 992px) {
@@ -68,7 +67,7 @@ export default {
 }
 @media (max-width: 992px) {
   #contact-page .item {
-    font-size: 1.9em;
+    font-size: 1.8em;
   }
 }
 

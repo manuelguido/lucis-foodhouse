@@ -81,7 +81,7 @@ export default {
 					image: 'mario.webp'
 				},
 				{
-					name: 'Pesadilla de cormillot',
+					name: 'Pesadilla',
 					ingredients: 'carne (triple o cuádruple), cheddar (x3 o x4), tomate, bbq, lechuga',
 					font: 'bebas ls06',
 					size: '2.3',
@@ -93,13 +93,6 @@ export default {
 					font: 'bebas ls06',
 					size: '2.3',
 					image: 'yeti.webp'
-				},
-				{
-					name: 'Especial halloween',
-					ingredients: 'hongos, hamburguesa 250gr rostbeef, cebolla caramelizada, lechuga',
-					font: 'nosifer',
-					size: '1.3',
-					image: 'halloween.webp'
 				}
 			]
 		}

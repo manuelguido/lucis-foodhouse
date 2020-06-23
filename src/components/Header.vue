@@ -1,7 +1,7 @@
 <template>
 	<div class="row bg-white-a content pb-5">
 		<div class="col-12 text-center">
-			<h1 id="main-title" class="mt-5 mt-lg-4 bebas black-a">LUCI'S FOODHOUSE</h1>
+			<h1 id="main-title" class="mt-5 mt-lg-4 bebas black-a">LUCI'S FOOD HOUSE</h1>
       <span class="align-middle">
         <i class="fas fa-circle align-middle black-a"></i>
         <h1 id="sub-title" class="align-middle megrim display-inline w300 mx-2 mx-lg-3">HAMBURGUESAS GOURMET</h1>

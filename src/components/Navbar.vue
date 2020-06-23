@@ -1,5 +1,5 @@
 <template>
-  <mdb-navbar id="main-navbar" class="bg-white-a py-2 pb-lg-0 pt-lg-3 px-lg-5 fixed-top uns shadow-none" light>
+  <mdb-navbar id="main-navbar" class="px-0 px-lg-5 fixed-top uns" light>
     <router-link to="/" class="logo-link ml-lg-4">
       <img class="logo" src="../assets/logo.png">
     </router-link>
@@ -21,17 +21,78 @@
       mdbNavbar,
       mdbNavbarToggler,
       mdbNavbarNav
+    },
+    created () {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    mounted() {
+      this.handleScroll()
+    },
+    destroyed () {
+      window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+      handleScroll () {
+        var nav = document.querySelector('#main-navbar')
+        if (window.scrollY <= 20 && window.innerWidth >= 992) {
+          nav.classList.add('big-nav')
+          nav.classList.remove('small-nav')
+        }
+        else {
+          nav.classList.add('small-nav')
+          nav.classList.remove('big-nav') 
+        }
+      }
     }
   }
 </script>
 
 <style>
+#main-navbar, #main-navbar * {
+  transition: 0.2s all !important;
+}
 #main-navbar {
-  /* background: none !important; */
   box-shadow: 0 none !important;
 }
+
+/* Big navbar */
+.big-nav {
+  background: 0 none;
+  box-shadow: none !important;
+  padding-bottom: 1.4em !important;
+}
+
+/* Small navbar */
+.small-nav {
+  background: #fff !important;
+  box-shadow:0 7px 19px 0 rgba(0,0,0,.02), 0 2px 6px 0 rgba(0,0,0,.02);
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.small-nav .logo {
+  width: 100px !important;
+}
+
 @media (min-width: 992px) {
-    .logo { width: 150px; }
+  #main-navbar {
+    background: none;
+  }
+}
+@media (max-width: 992px) {
+  #main-navbar {
+    background: var(--white-a);
+  }
+  .navbar-toggler-icon {
+    margin-right: 1em;
+  }
+  .logo {
+    margin-left: 1em;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .logo { width: 150px; }
 }
 @media (max-width: 992px) {
   #navbarSupportedContent {
