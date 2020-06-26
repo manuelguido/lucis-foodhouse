@@ -2,7 +2,7 @@
   <div class="home-page">
     <div class="container-fluid text-center outer-content w-100 uns">
       <lucis-header/>
-      <img class="mobile-image web-hide" src="../assets/home-image.jpeg">
+      <img class="mobile-image web-hide" src="../assets/home-image.webp">
     </div>
     <lucis-footer/>
   </div>
@@ -25,7 +25,7 @@ export default {
 @media (min-width: 992px) {
   .home-page {
     /* The image used */
-    background-image: url("../assets/home-banner.jpeg");
+    background-image: url("../assets/home-banner.webp");
     /* Full height */
     min-height: 100vh !important;
     width: 100vw;
