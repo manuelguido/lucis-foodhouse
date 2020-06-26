@@ -25,7 +25,7 @@ export default {
 @media (min-width: 992px) {
   .home-page {
     /* The image used */
-    background-image: url("../assets/home-image.jpeg");
+    background-image: url("../assets/home-banner.jpeg");
     /* Full height */
     min-height: 100vh !important;
     width: 100vw;

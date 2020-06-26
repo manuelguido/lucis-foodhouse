@@ -37,10 +37,8 @@ export default {
 .footer-copyright {
   width: 100vw !important;
 }
-@media (min-width: 992px) {
-  .footer-copyright {
-    height: 50px;
-  }
+.footer-copyright {
+  height: 50px;
 }
 .footer-copyright p {
   color: var(--black-a);
