@@ -75,7 +75,7 @@ export default {
 				},
 				{
 					name: 'Mario bros',
-					ingredients: 'hongos, hamburguesa 250gr rostbeef, cebolla caramelizada, lechuga',
+					ingredients: 'carne, hongos, cebolla caramelizada, lechuga',
 					font: 'bebas ls06',
 					size: '2.3',
 					image: 'mario.webp'

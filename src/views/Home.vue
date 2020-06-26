@@ -2,7 +2,7 @@
   <div class="home-page">
     <div class="container-fluid text-center outer-content w-100 uns">
       <lucis-header/>
-      <!-- <img class="mobile-image web-hide" src="../assets/home-image.jpeg"> -->
+      <img class="mobile-image web-hide" src="../assets/home-image.jpeg">
     </div>
     <lucis-footer/>
   </div>
@@ -22,12 +22,12 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 2px) {
+@media (min-width: 992px) {
   .home-page {
     /* The image used */
     background-image: url("../assets/home-image.jpeg");
     /* Full height */
-    height: 100vh !important;
+    min-height: 100vh !important;
     width: 100vw;
     /* Center and scale the image nicely */
     background-position: center;
@@ -36,7 +36,7 @@ export default {
   }
 }
 .mobile-image {
-  width: 90%;
-  margin: 0 auto 40px auto;
+  width: 95%;
+  margin: 40px auto 0 auto;
 }
 </style>
