@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
-import Home from './views/Home.vue'
-import Combos from './views/Combos.vue'
-import Contact from './views/Contact.vue'
-import Error404 from './views/Error404.vue'
+import Home from './views/home.vue'
+import Combos from './views/combos.vue'
+import Contact from './views/contact.vue'
+import Error404 from './views/error404.vue'
 
 Vue.use(Router)
 
