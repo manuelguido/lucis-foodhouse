@@ -49,56 +49,42 @@ export default {
 					id: 1,
 					name: 'Clásica',
 					ingredients: 'carne, cheddar, panceta, cebolla caramelizada, cebolla morada, lechuga.',
-					font: 'bebas ls06',
-					size: '2.3',
 					image: 'clasica.webp'
 				},
 				{
 					id: 2,
 					name: 'Cheese burger',
 					ingredients: 'carne, cheddar, pepinillos, tomate, kétchup.',
-					font: 'bebas ls06',
-					size: '2.3',
 					image: 'cheese.webp'
 				},
 				{
 					id: 3,
 					name: 'Pampeana',
 					ingredients: 'carne, mozarella, morrón asado, tomate asado, pepinillos, rúcula',
-					font: 'bebas ls06',
-					size: '2.3',
 					image: 'pampeana.webp'
 				},
 				{
 					id: 4,
 					name: "Bluci's",
 					ingredients: 'carne, queso azul, panceta, cebolla caramelizada, cebolla morada, lechuga.',
-					font: 'bebas ls06',
-					size: '2.3',
 					image: 'blucis.webp'
 				},
 				{
 					id: 5,
 					name: 'Mario bros',
 					ingredients: 'carne, hongos, cebolla caramelizada, lechuga',
-					font: 'bebas ls06',
-					size: '2.3',
 					image: 'mario.webp'
 				},
 				{
 					id: 6,
 					name: 'Pesadilla',
 					ingredients: 'carne (triple o cuádruple), cheddar (x3 o x4), tomate, bbq, lechuga',
-					font: 'bebas ls06',
-					size: '2.3',
 					image: 'pesadilla.webp'
 				},
 				{
 					id: 7,
 					name: 'Yeti',
 					ingredients: 'doble carne, doble cheddar, doble queso americano, doble panceta, cebolla caramelizada, cebolla morada, bbq, lechuga',
-					font: 'bebas ls06',
-					size: '2.3',
 					image: 'yeti.webp'
 				}
 			]

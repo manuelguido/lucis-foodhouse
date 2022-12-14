@@ -6,14 +6,8 @@
         <BurgerImage :path="burger.image"/>
       </mdbCol>
       <mdbCol col=8 class="pl-4">
-        <h2
-          class="burger-title my-lg-3"
-          :class="burger.font"
-          :style="'font-size:' + burger.size + 'em;'"
-        >
-          {{burger.name}}
-        </h2>
-        <p class="burger-ingredients majorm black-a">{{burger.ingredients}}</p>
+        <BurgerName :text="burger.name" />
+        <BurgerIngredients :text="burger.ingredients" />
       </mdbCol>
     </mdbRow>
     </div>
@@ -23,13 +17,17 @@
 <script>
 import { mdbRow, mdbCol } from 'mdbvue';
 import BurgerImage from '@/components/burger/image.vue'
+import BurgerName from '@/components/burger/name.vue'
+import BurgerIngredients from '@/components/burger/ingredients.vue'
 
 export default {
   name: 'Burger',
   components: {
     mdbRow,
     mdbCol,
-    BurgerImage
+    BurgerImage,
+    BurgerName,
+    BurgerIngredients
     },
   props: {
     burger: Object,
@@ -41,20 +39,14 @@ export default {
 <style scoped>
 .burger {
   cursor: pointer;
-  transition: 0.1s all;
+  transition: 0.2s all;
   border-radius: 16px;
+  padding: 1rem;
 }
 .burger:hover {
-  background: #f8f8f8;
+  background: #eee;
 }
 .burger:active {
   background: #f1f1f1;
-}
-.burger-title {
-  text-shadow: 0px 3px 6px rgba(0,0,0,0.16);
-}
-.burger-ingredients {
-  font-size: .9em;
-  text-shadow: 0px 0px .01em var(--black-a);
 }
 </style>
