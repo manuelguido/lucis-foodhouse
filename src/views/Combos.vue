@@ -1,59 +1,52 @@
 <template>
   <div class="combos-page">
     <div class="container-fluid outer-content uns">
-      <lucis-header/>
+      <LucisHeader/>
 			<mdbRow>
 				<mdbCol col=12 lg=6 class="my-4 my-lg-5 pt-4">
 					<h1 class="title mb-3 animated fadeIn">Conocé nuestros combos</h1>
-					<h2 class="combo-subtitle montserrat animated fadeIn">Todos los combos vienen en versión veggie*</h2>
-				</mdbCol>
-				<mdbCol col=12 lg=6 class="text-right">
-					<img class="table-image mobile-hide" src="../assets/table.webp">
+					<VeggieText />
 				</mdbCol>
 			</mdbRow>
 			<mdbRow>
-				<burgerModal
-					:burger=current_burger
-					></burgerModal>
+				<BurgerModal :burger=currentBurguer />
 			</mdbRow>
 			<mdbRow class="mt-3">
-				<!-- <mdbCol col=12>
-					<i @click="moveCarousel(-1)" class="fas fa-chevron-left fa-lg arrow left-arrow"></i>
-					<i @click="moveCarousel(1)" class="fas fa-chevron-right fa-lg arrow right-arrow"></i>
-				</mdbCol> -->
-				<burger
+				<Burguer
 					@click.native="currentBurger(burger)"
 					v-for="burger in burgers"
 					:key="burger.name"
 					:burger=burger
-				></burger>
+				/>
 			</mdbRow>
     </div>
-    <lucis-footer/>
+    <LucisFooter/>
   </div>
 </template>
 
 <script>
 import { mdbCol, mdbRow } from 'mdbvue';
-import lucisFooter from '@/components/Footer.vue'
-import lucisHeader from '@/components/Header.vue'
-import burger from '@/components/Burger.vue'
-import burgerModal from '@/components/BurgerModal.vue'
+import LucisFooter from '@/components/Footer.vue'
+import LucisHeader from '@/components/Header.vue'
+import Burguer from '@/components/burger/index.vue'
+import BurgerModal from '@/components/BurgerModal.vue'
+import VeggieText from '@/components/view/combos/veggieText.vue'
 
 export default {
   name: 'home',
   components: {
 		mdbRow,
 		mdbCol,
-    'lucis-footer': lucisFooter,
-		'lucis-header': lucisHeader,
-		burger,
-		burgerModal
+    LucisFooter,
+		LucisHeader,
+		Burguer,
+		BurgerModal,
+		VeggieText
 	},
 	data () {
 		return {
-			current_burger: null,
-			// display_modal: false,
+			currentBurguer: null,
+			veggieText: 'Todos los combos vienen en versión veggie',
 			burgers: [
 				{
 					id: 1,
@@ -116,8 +109,8 @@ export default {
 	},
 	methods: {
 		currentBurger (burger) {
-			this.current_burger = null
-			this.current_burger = burger
+			this.currentBurguer = null
+			this.currentBurguer = burger
 		},
 		showModal (id) {
 			alert(id)
@@ -145,22 +138,4 @@ export default {
 		font-size: 23px;
 	}
 }
-/* 
-.arrow {
-	color: var(--black-c);
-	cursor: pointer;
-	z-index: 10000;
-	position: absolute;
-	top: 180px !important;
-	transform: translateY(-50%) !important;
-}
-.arrow:hover {
-	color: var(--color-a);
-}
-.left-arrow {
-	left: -70px;
-}
-.right-arrow {
-	right: -70px;
-} */
 </style>
