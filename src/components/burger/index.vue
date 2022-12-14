@@ -35,11 +35,6 @@ export default {
     burger: Object,
     default: () => {},
   },
-  data () {
-    return {
-      display_modal: false
-    }
-  }
 }
 </script>
 
