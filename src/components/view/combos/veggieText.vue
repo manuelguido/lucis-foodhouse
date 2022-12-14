@@ -1,12 +1,14 @@
 <template>
-  <h2 :class="classList">{{ text }}</h2>
+  <h1 :class="classList">{{ text }}</h1>
 </template>
 
 <script>
 export default {
+  name: 'ViewCombosVeggieText',
   data() {
     return {
-      text: "Todos los combos vienen en versión veggie"
+      text: 'Todos los combos vienen en versión veggie',
+      classList: 'combo-subtitle montserrat animated fadeIn',
     }
   }
 }

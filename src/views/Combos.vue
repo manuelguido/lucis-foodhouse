@@ -4,7 +4,7 @@
       <LucisHeader/>
 			<mdbRow>
 				<mdbCol col=12 lg=6 class="my-4 my-lg-5 pt-4">
-					<h1 class="title mb-3 animated fadeIn">Conocé nuestros combos</h1>
+					<CombosText />
 					<VeggieText />
 				</mdbCol>
 			</mdbRow>
@@ -12,12 +12,7 @@
 				<BurgerModal :burger=currentBurguer />
 			</mdbRow>
 			<mdbRow class="mt-3">
-				<Burguer
-					@click.native="currentBurger(burger)"
-					v-for="burger in burgers"
-					:key="burger.name"
-					:burger=burger
-				/>
+				<Burguer v-for="b in burgers" :key="b.name" :burger=b @click.native="currentBurger(b)" />
 			</mdbRow>
     </div>
     <LucisFooter/>
@@ -31,6 +26,7 @@ import LucisHeader from '@/components/Header.vue'
 import Burguer from '@/components/burger/index.vue'
 import BurgerModal from '@/components/BurgerModal.vue'
 import VeggieText from '@/components/view/combos/veggieText.vue'
+import CombosText from '@/components/view/combos/combosText.vue'
 
 export default {
   name: 'home',
@@ -41,6 +37,7 @@ export default {
 		LucisHeader,
 		Burguer,
 		BurgerModal,
+    CombosText,
 		VeggieText
 	},
 	data () {
