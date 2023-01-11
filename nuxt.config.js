@@ -24,7 +24,7 @@ export default {
   css: [
     'bootstrap-css-only/css/bootstrap.min.css',
     'mdbvue/lib/css/mdb.min.css',
-    '@/assets/fonts/iconly/dist/css/style.css',
+    // '@/assets/fonts/iconly/dist/css/style.css',
     '@/assets/fonts/fontawesome/css/all.css',
     '@/assets/scss/_scrollbar.scss',
     '@/assets/scss/_typography.scss',
