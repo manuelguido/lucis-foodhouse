@@ -30,6 +30,11 @@ import { Burger } from '~/interfaces/burger'
 
 export default Vue.extend({
   name: 'CombosPage',
+  head() {
+    return {
+      title: 'Nuestras hamburguesas'
+    }
+  },
   data() {
     return {
       currentBurguer: null as Burger | null,

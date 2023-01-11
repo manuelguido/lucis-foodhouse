@@ -20,6 +20,11 @@ export default Vue.extend({
     return {
       animatedDelay: 20 as number
     }
+  },
+  head() {
+    return {
+      title: "Luci's FoodHouse"
+    }
   }
 })
 </script>

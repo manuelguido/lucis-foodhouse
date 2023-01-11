@@ -24,7 +24,12 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'Error404Page'
+  name: 'Error404Page',
+  head() {
+    return {
+      title: 'Error 404'
+    }
+  }
 })
 </script>
 

@@ -44,7 +44,12 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'ContactPage'
+  name: 'ContactPage',
+  head() {
+    return {
+      title: "Contacto"
+    }
+  }
   // mounted () {
   //   let recaptchaScript = document.createElement('style')
   //   recaptchaScript.setAttribute('rel', 'stylesheet')
