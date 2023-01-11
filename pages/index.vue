@@ -1,9 +1,9 @@
 <template>
-  <ViewIndexImageBackground :delay="animatedDelay">
-    <div class="inner-flex">
-      <NavigationHeader :delay="animatedDelay" />
-    </div>
-  </ViewIndexImageBackground>
+  <ViewImageBackground center>
+    <!-- <div class="inner-flex bg-success"> -->
+    <NavigationHeader :delay="animatedDelay" />
+    <!-- </div> -->
+  </ViewImageBackground>
 </template>
 
 <script lang="ts">
@@ -22,14 +22,3 @@ export default Vue.extend({
   }
 })
 </script>
-
-<style scoped>
-.inner-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-</style>

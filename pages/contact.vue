@@ -1,43 +1,44 @@
 <template>
-  <div id="contact-page">
-    <div class="container-fluid outer-content w-100 uns">
-      <NavigationHeader />
-      <div class="row mt-lg-5 pt-3">
-        <div class="col-12 col-lg-6 text-center">
-          <h1 class="title mb-4 mb-lg-5">CONTACTATE CON NOSOTROS</h1>
-          <a
-            class="item"
-            target="_black"
-            href="https://api.whatsapp.com/send?phone=+5492284624049"
-          >
-            <i class="fab fa-whatsapp mr-3 white-d"></i>
-            2284624049
-          </a>
-          <a
-            class="item"
-            target="_black"
-            href="https://www.instagram.com/lucisfoodhouse/"
-          >
-            <i class="fab fa-instagram mr-3 white-d"></i>
-            @lucisfoodhouse
-          </a>
-          <p class="item">
-            <i class="fas fa-envelope mr-3 white-d"></i>
-            lucisfoodhouse@hotmail.com
-          </p>
-        </div>
-        <div class="col-12 col-lg-6 mt-5 mt-lg-0 text-center">
-          <h1 class="title mb-4 mb-lg-5">DONDE ENCONTRARNOS</h1>
-          <p class="item">
-            <i class="fas fa-map-marker-alt mr-3 white-d"></i>OLAVARRÍA, BUENOS
-            AIRES
-          </p>
-          <!-- <v-map></v-map> -->
+  <ViewIndexImageBackground>
+    <div id="contact-page">
+      <div class="container-fluid outer-content w-100 uns">
+        <NavigationHeader />
+        <div class="row mt-lg-5 pt-3">
+          <div class="col-12 col-lg-6 text-center">
+            <h1 class="title mb-4 mb-lg-5">CONTACTATE CON NOSOTROS</h1>
+            <a
+              class="item"
+              target="_black"
+              href="https://api.whatsapp.com/send?phone=+5492284624049"
+            >
+              <i class="fab fa-whatsapp mr-3 white-d"></i>
+              2284624049
+            </a>
+            <a
+              class="item"
+              target="_black"
+              href="https://www.instagram.com/lucisfoodhouse/"
+            >
+              <i class="fab fa-instagram mr-3 white-d"></i>
+              @lucisfoodhouse
+            </a>
+            <p class="item">
+              <i class="fas fa-envelope mr-3 white-d"></i>
+              lucisfoodhouse@hotmail.com
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 mt-5 mt-lg-0 text-center">
+            <h1 class="title mb-4 mb-lg-5">DONDE ENCONTRARNOS</h1>
+            <p class="item">
+              <i class="fas fa-map-marker-alt mr-3 white-d"></i>OLAVARRÍA,
+              BUENOS AIRES
+            </p>
+            <!-- <v-map></v-map> -->
+          </div>
         </div>
       </div>
     </div>
-    <NavigationFooter />
-  </div>
+  </ViewIndexImageBackground>
 </template>
 
 <script lang="ts">
@@ -47,7 +48,7 @@ export default Vue.extend({
   name: 'ContactPage',
   head() {
     return {
-      title: "Contacto"
+      title: 'Contacto'
     }
   }
   // mounted () {

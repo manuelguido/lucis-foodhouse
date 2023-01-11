@@ -1,15 +1,21 @@
 <template>
   <div :class="classList">
-    <ViewOurBurgersImageBackgroundFilter>
+    <ViewImageBackgroundFilter :center="center">
       <slot />
-    </ViewOurBurgersImageBackgroundFilter>
+    </ViewImageBackgroundFilter>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'ViewIndexImageBackground',
+  name: 'ViewImageBackground',
+  props: {
+    center: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       wideImage: false as boolean,
@@ -25,5 +31,7 @@ export default Vue.extend({
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
 }
 </style>
