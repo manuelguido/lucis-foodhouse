@@ -60,7 +60,7 @@ export default Vue.extend({
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   transition: 1.5s all;
 }
 

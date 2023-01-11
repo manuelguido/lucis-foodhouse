@@ -60,7 +60,7 @@ export default Vue.extend({
 }
 
 .image-filter.dark {
-  background: rgba(23, 23, 23, 0.7);
+  background: rgba(23, 23, 23, 0.8);
 }
 
 .image-filter.glass {
