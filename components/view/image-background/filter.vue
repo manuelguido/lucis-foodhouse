@@ -39,13 +39,13 @@ export default Vue.extend({
 
 @media screen and (min-width: 992px) {
   .image-filter:not(.center) {
-    padding-top: 14vh;
+    padding-top: 20vh;
   }
 }
 
 @media screen and (max-width: 992px) {
   .image-filter:not(.center) {
-    padding-top: 10vh;
+    padding-top: 12vh;
   }
 }
 </style>

@@ -1,38 +1,42 @@
 <template>
-  <div id="footer" class="footer">
-    <div class="footer-copyright text-center py-5">
-      <div class="row px-lg-5 px-md-4 justify-content-center">
-        <div class="col-lg-6 text-left">
-          <FooterCredits />
-        </div>
-        <div class="col-12 col-lg-6 text-left text-lg-right">
-          <!-- <p class="my-0 py-0">Diseñado y desarrollado por <a href="https://zebradevs.com/" target="_blank">Zebra Devs</a></p> -->
-        </div>
-      </div>
+  <div class="footer">
+    <div class="mr-3">
+      <NavigationFooterCopyright />
     </div>
+
+    <NavigationFooterAuthor />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-
 export default Vue.extend({
-  name: 'FooterPage'
+  name: 'Footer'
 })
 </script>
 
-<style scoped>
-#footer {
-  margin: 0 !important;
+<style lang="scss" scoped>
+@import '@/assets/scss/_glassmorphism.scss';
+
+.footer {
+  @include glassBlackLight;
+
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
-.footer-copyright {
-  background: rgba(80, 80, 80, 0.7);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
-  width: 100vw !important;
+
+@media screen and (min-width: 992px) {
+  .footer {
+    padding: 1rem 8rem;
+  }
 }
-.footer-copyright {
-  height: 50px;
+
+@media screen and (max-width: 992px) {
+  .footer {
+    padding: 1rem 2rem;
+  }
 }
 </style>
