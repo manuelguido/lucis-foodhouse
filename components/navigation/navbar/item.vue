@@ -26,10 +26,10 @@ export default Vue.extend({
 
 <style scoped>
 .nav-link {
-  color: var(--black-a) !important;
-  font-weight: 400;
-  font-size: 27px;
-  letter-spacing: 0.06em;
+  color: var(--white-a) !important;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 .nav-link:hover {

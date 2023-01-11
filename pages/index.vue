@@ -1,33 +1,37 @@
 <template>
-  <div class="home-page">
-    <div class="container-fluid text-center outer-content w-100 uns">
-      <NavigationHeader />
-      <img
-        class="mobile-image web-hide"
-        :src="require('~/assets/img/home-image.webp')"
-      />
+  <ViewIndexImageBackground :delay="animatedDelay">
+    <div class="inner-flex">
+      <NavigationHeader :delay="animatedDelay" />
+      <!-- <div class="container-fluid text-center outer-content w-100 uns">
+        <img
+          class="mobile-image web-hide"
+          :src="require('~/assets/img/home-image.webp')"
+        />
+      </div> -->
     </div>
-    <NavigationFooter />
-  </div>
+  </ViewIndexImageBackground>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  data() {
+    return {
+      animatedDelay: 20 as number
+    }
+  }
 })
 </script>
 
-<style lang="scss" scoped>
-@media screen and (min-width: 992px) {
-  .home-page {
-    background-image: url('@/assets/img/home-banner.webp');
-    min-height: 100vh !important;
-    width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
+<style scoped>
+.inner-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .mobile-image {

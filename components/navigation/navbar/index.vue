@@ -55,17 +55,26 @@ export default Vue.extend({
 
 /* Big navbar */
 .big-nav {
-  background: 0 none;
+  /* From https://css.glass */
+  background: rgba(35, 35, 35, 0.16);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
   box-shadow: none !important;
-  padding-bottom: 1.4em !important;
+  padding: 0.5rem 0;
 }
 
 /* Small navbar */
 .small-nav {
-  background: #fff !important;
+  /* From https://css.glass */
+background: rgba(35, 35, 35, 0.16);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+
   box-shadow: 0 7px 19px 0 rgba(0, 0, 0, 0.02), 0 2px 6px 0 rgba(0, 0, 0, 0.02);
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding: 0.2rem 0;
 }
 
 @media (min-width: 992px) {

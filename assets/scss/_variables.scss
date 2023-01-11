@@ -1,0 +1,31 @@
+/**
+ *  SCSS variables
+ */
+
+$color-a: #fcdc2c;
+$color-b: #fca92c;
+$color-c: #5143de;
+$color-d: #80c7c1;
+
+$colors: (
+  "color-a": $color-a,
+  "color-b": $color-b,
+  "color-c": $color-c,
+  "color-d": $color-d,
+);
+
+// Font Weight
+$font-weights: 100, 200, 300, 400, 500, 600, 700, 800;
+
+// Letter spacing
+$letter-spacing: (
+  "1": 0.01rem,
+  "2": 0.02rem,
+  "3": 0.03rem,
+  "4": 0.04rem,
+  "5": 0.05rem,
+  "6": 0.06rem,
+  "7": 0.07rem,
+  "8": 0.08rem,
+  "9": 0.09rem,
+);

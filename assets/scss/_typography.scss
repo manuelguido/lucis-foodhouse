@@ -1,0 +1,184 @@
+/**
+ *  Typography
+ */
+@import "./variables.scss";
+
+// Font weight
+@each $weight in $font-weights {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+// Letter spacing
+@each $size, $value in $letter-spacing {
+  .ls-#{$size} {
+    letter-spacing: $value;
+  }
+}
+
+// Text color
+@each $color, $value in $colors {
+  .text-#{$color} {
+    color: $value;
+  }
+}
+
+/*--------------------------------------------------------------
+  Responsive & Size
+--------------------------------------------------------------*/
+@media (max-width: 331.98px) {
+  .h1-responsive {
+    font-size: 3rem;
+  }
+
+  .h2-responsive {
+    font-size: 1.5rem;
+  }
+
+  .h3-responsive {
+    font-size: 1.4rem;
+  }
+
+  .h4-responsive {
+    font-size: 1.3rem;
+  }
+
+  .h5-responsive {
+    font-size: 1.1rem;
+  }
+
+  .h6-responsive {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 332px) and (max-width: 575.98px) {
+  .h1-responsive {
+    font-size: 3rem;
+  }
+
+  .h2-responsive {
+    font-size: 1.8rem;
+  }
+
+  .h3-responsive {
+    font-size: 1.4rem;
+  }
+
+  .h4-responsive {
+    font-size: 1.3rem;
+  }
+
+  .h5-responsive {
+    font-size: 1.1rem;
+  }
+
+  .h6-responsive {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .h1-responsive {
+    font-size: 4rem;
+  }
+
+  .h2-responsive {
+    font-size: 2rem;
+  }
+
+  .h3-responsive {
+    font-size: 1.5rem;
+  }
+
+  .h4-responsive {
+    font-size: 1.4rem;
+  }
+
+  .h5-responsive {
+    font-size: 1.2rem;
+  }
+
+  .h6-responsive {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .h1-responsive {
+    font-size: 5rem;
+  }
+
+  .h2-responsive {
+    font-size: 2.25rem;
+  }
+
+  .h3-responsive {
+    font-size: 1.75rem;
+  }
+
+  .h4-responsive {
+    font-size: 1.4rem;
+  }
+
+  .h5-responsive {
+    font-size: 1.2rem;
+  }
+
+  .h6-responsive {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .h1-responsive {
+    font-size: 6rem;
+  }
+
+  .h2-responsive {
+    font-size: 2.25rem;
+  }
+
+  .h3-responsive {
+    font-size: 1.75rem;
+  }
+
+  .h4-responsive {
+    font-size: 1.4rem;
+  }
+
+  .h5-responsive {
+    font-size: 1.2rem;
+  }
+
+  .h6-responsive {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h1-responsive {
+    font-size: 8rem;
+  }
+
+  .h2-responsive {
+    font-size: 4rem;
+  }
+
+  .h3-responsive {
+    font-size: 2.5rem;
+  }
+
+  .h4-responsive {
+    font-size: 1.45rem;
+  }
+
+  .h5-responsive {
+    font-size: 1.2rem;
+  }
+
+  .h6-responsive {
+    font-size: 1.05rem;
+  }
+}

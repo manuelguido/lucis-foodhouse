@@ -13,7 +13,7 @@ export default Vue.extend({
       url: '/' as string,
       outerClass: 'logo-link ml-lg-4' as string,
       imageClass: 'logo' as string,
-      image: require('~/assets/img/logo.png') as File
+      image: require('~/assets/img/logo-white.png') as File
     }
   }
 })
