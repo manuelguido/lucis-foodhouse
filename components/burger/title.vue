@@ -7,7 +7,7 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'BurgerName',
+  name: 'BurgerTitle',
   props: {
     tag: {
       type: String,
@@ -16,19 +16,20 @@ export default Vue.extend({
     text: {
       type: String,
       default: ''
+    },
+    color: {
+      type: String,
+      default: 'white-a'
     }
   },
-  data() {
-    return {
-      classList: 'burger-title my-lg-3 bebas ls06' as string
+  computed: {
+    colorClass(): string {
+      return `text-${this.color}`
+    },
+    classList(): Array<string> {
+      const base: string = 'h3-responsive bebas ls-6'
+      return [this.colorClass, base]
     }
   }
 })
 </script>
-
-<style lang="scss" scoped>
-.burger-title {
-  font-size: 2.3em;
-  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-}
-</style>

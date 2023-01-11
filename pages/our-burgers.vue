@@ -1,16 +1,16 @@
 <template>
-  <div class="combos-page">
-    <div class="container-fluid outer-content uns">
+  <ViewOurBurgersImageBackground>
+    <div class="main-padding pt-5">
       <div class="row">
-        <div class="col-12 col-lg-6 my-4 my-lg-5 pt-4">
+        <div class="col-12 mb-5">
           <CombosText />
           <CombosVeggieText />
         </div>
       </div>
-      <!-- <div class="row">
+      <div class="row">
         <BurgerModal :burger="currentBurguer" />
-      </div> -->
-      <div class="row mt-3">
+      </div>
+      <div class="row">
         <Burger
           v-for="(burger, i) in burgers"
           :key="i"
@@ -19,7 +19,7 @@
         />
       </div>
     </div>
-  </div>
+  </ViewOurBurgersImageBackground>
 </template>
 
 <script lang="ts">
@@ -41,48 +41,79 @@ export default Vue.extend({
         {
           id: 1,
           name: 'Clásica',
-          ingredients:
-            'carne, cheddar, panceta, cebolla caramelizada, cebolla morada, lechuga.',
+          ingredients: [
+            'Carne',
+            'Cheddar',
+            'Panceta',
+            'Cebolla caramelizada',
+            'Cebolla morada',
+            'Lechuga'
+          ],
           image: 'clasica.webp'
         },
         {
           id: 2,
-          name: 'Cheese burger',
-          ingredients: 'carne, cheddar, pepinillos, tomate, kétchup.',
+          name: 'Cheese',
+          ingredients: ['Carne', 'Cheddar', 'Pepinillos', 'Tomate', 'Kétchup'],
           image: 'cheese.webp'
         },
         {
           id: 3,
           name: 'Pampeana',
-          ingredients:
-            'carne, mozarella, morrón asado, tomate asado, pepinillos, rúcula',
+          ingredients: [
+            'Carne',
+            'Mozarella',
+            'Morrón asado',
+            'Tomate asado',
+            'Pepinillos',
+            'Rúcula'
+          ],
           image: 'pampeana.webp'
         },
         {
           id: 4,
           name: "Bluci's",
-          ingredients:
-            'carne, queso azul, panceta, cebolla caramelizada, cebolla morada, lechuga.',
+          ingredients: [
+            'Carne',
+            'Queso azul',
+            'Panceta',
+            'Cebolla caramelizada',
+            'Cebolla morada',
+            'Lechuga.'
+          ],
           image: 'blucis.webp'
         },
         {
           id: 5,
           name: 'Mario bros',
-          ingredients: 'carne, hongos, cebolla caramelizada, lechuga',
+          ingredients: ['Carne', 'Hongos', 'Cebolla caramelizada', 'Lechuga'],
           image: 'mario.webp'
         },
         {
           id: 6,
           name: 'Pesadilla',
-          ingredients:
-            'carne (triple o cuádruple), cheddar (x3 o x4), tomate, bbq, lechuga',
+          ingredients: [
+            'Carne (x3 o x4)',
+            'Cheddar (x3 o x4)',
+            'Tomate',
+            'BBQ',
+            'Lechuga'
+          ],
           image: 'pesadilla.webp'
         },
         {
           id: 7,
           name: 'Yeti',
-          ingredients:
-            'doble carne, doble cheddar, doble queso americano, doble panceta, cebolla caramelizada, cebolla morada, bbq, lechuga',
+          ingredients: [
+            'Carne (x2)',
+            'Cheddar (x2)',
+            'Queso americano (x2)',
+            'Doble panceta',
+            'Cebolla caramelizada',
+            'Cebolla morada',
+            'BBQ',
+            'Lechuga'
+          ],
           image: 'yeti.webp'
         }
       ]
@@ -92,31 +123,9 @@ export default Vue.extend({
     currentBurger(burger: Burger): void {
       this.currentBurguer = null
       this.currentBurguer = burger
-    }
-    // showModal(id: number): void {
-    //   alert(id)
-    // }
+      this.showModal(burger.id)
+    },
+    showModal(id: number): void {}
   }
 })
 </script>
-
-<style scoped>
-/* .container-fluid {
-  padding: 0 6vw 40px 6vw;
-} */
-/* .table-image {
-  margin-top: -160px;
-  margin-right: -60px;
-  width: 440px;
-} */
-@media (min-width: 992px) {
-  .combo-subtitle {
-    font-size: 28px;
-  }
-}
-@media (max-width: 992px) {
-  .combo-subtitle {
-    font-size: 23px;
-  }
-}
-</style>

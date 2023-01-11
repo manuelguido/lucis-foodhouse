@@ -2,12 +2,6 @@
   <ViewIndexImageBackground :delay="animatedDelay">
     <div class="inner-flex">
       <NavigationHeader :delay="animatedDelay" />
-      <!-- <div class="container-fluid text-center outer-content w-100 uns">
-        <img
-          class="mobile-image web-hide"
-          :src="require('~/assets/img/home-image.webp')"
-        />
-      </div> -->
     </div>
   </ViewIndexImageBackground>
 </template>
@@ -37,10 +31,5 @@ export default Vue.extend({
   align-items: center;
   height: 100%;
   width: 100%;
-}
-
-.mobile-image {
-  width: 95%;
-  margin: 40px auto 0 auto;
 }
 </style>

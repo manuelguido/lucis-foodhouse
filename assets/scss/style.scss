@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background: $white-a;
+  background: #232323;
   overflow-x: hidden;
 }
 
@@ -44,16 +44,21 @@ body {
   user-select: none;
 }
 
-/**
- *  Responsive hiding
- */
+@media (min-width: 992px) {
+  .web-hide {
+    display: none !important;
+  }
+  .main-padding {
+    padding-left: 10vw !important;
+    padding-right: 10vw !important;
+  }
+}
 @media (max-width: 992px) {
   .mobile-hide {
     display: none !important;
   }
-}
-@media (min-width: 992px) {
-  .web-hide {
-    display: none !important;
+  .main-padding {
+    padding-left: 4vw !important;
+    padding-right: 4vw !important;
   }
 }

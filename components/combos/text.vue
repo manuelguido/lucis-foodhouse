@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       text: 'Conocé nuestros combos',
-      classList: 'title mb-3 animated fadeIn',
+      classList: 'title mb-2 animated fadeInUp text-white-a',
     }
   }
 }

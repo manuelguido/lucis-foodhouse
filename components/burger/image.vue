@@ -17,7 +17,7 @@ export default Vue.extend({
 
 <style scoped>
 img {
-  width: 105% !important;
-  border-radius: 16px;
+  width: 100% !important;
+  border-radius: 12px;
 }
 </style>

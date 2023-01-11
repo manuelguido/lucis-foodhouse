@@ -1,28 +1,25 @@
 <template>
-  <p :class="classList">{{ text }}</p>
+  <div>
+    <p v-for="(ing, i) in ingredients" :key="i" :class="classList">
+      {{ ing }}
+    </p>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue, { PropOptions } from 'vue'
 export default Vue.extend({
   name: 'BurgerIngredients',
   props: {
-    text: {
-      type: String,
-      default: ''
-    }
+    ingredients: {
+      type: Array,
+      default: () => []
+    } as PropOptions<string[]>
   },
   data() {
     return {
-      classList: 'burger-ingredients majorm black-a' as string
+      classList: 'h5-responsive majorm text-white-a text-lowercase' as string
     }
   }
 })
 </script>
-
-<style scoped>
-.burger-ingredients {
-  font-size: 1rem;
-  text-shadow: 0px 0px 0.01em var(--black-a);
-}
-</style>
