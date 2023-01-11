@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex flex-row justify-content-center align-items-center p-0">
     <NavigationHeaderSubtitleIcon />
-    <h1 :id="id" :class="classList">
+    <h1 :class="classList">
       {{ text }}
     </h1>
     <NavigationHeaderSubtitleIcon />

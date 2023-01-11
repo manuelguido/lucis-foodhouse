@@ -17,7 +17,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      classList: 'px-3 px-lg-5 fixed-top uns' as string
+      classList: 'px-3 px-lg-5 fixed-top main-padding uns' as string
     }
   },
   created() {
@@ -46,47 +46,27 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 @import '@/assets/scss/_variables';
+@import '@/assets/scss/glassmorphism';
 
-// #main-navbar,
-// #main-navbar * {
-//   transition: 0.5s all !important;
-// }
+#main-navbar,
+#main-navbar * {
+  transition: 0.3s all !important;
+}
+
 #main-navbar {
-  box-shadow: 0 none !important;
+  @include glassBlackDark;
 }
 
 /* Big navbar */
 .big-nav {
-  background: rgba(35, 35, 35, 0.16);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-
-  box-shadow: none !important;
-  padding: 0.5rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* Small navbar */
 .small-nav {
-  background: rgba(35, 35, 35, 0.16);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-
-  box-shadow: 0 7px 19px 0 rgba(0, 0, 0, 0.02), 0 2px 6px 0 rgba(0, 0, 0, 0.02);
-  padding: 0.2rem 0;
-}
-
-@media (min-width: 992px) {
-  #main-navbar {
-    background: none;
-  }
-}
-@media (max-width: 992px) {
-  #main-navbar {
-    background: rgba(35, 35, 35, 0.37);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(18.7px);
-    -webkit-backdrop-filter: blur(18.7px);
-  }
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 </style>

@@ -45,6 +45,7 @@ export default Vue.extend({
 
 @media screen and (min-width: 992px) {
   .nav-link:last-child {
+    padding-right: 0;
     margin-right: 0 !important;
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <mdb-navbar-toggler class="ml-auto mr-lg-4">
+  <mdb-navbar-toggler class="ml-auto">
     <mdb-navbar-nav class="text-right" right>
       <NavigationNavbarItem v-for="(item, i) in items" :key="i" :item="item" />
     </mdb-navbar-nav>
