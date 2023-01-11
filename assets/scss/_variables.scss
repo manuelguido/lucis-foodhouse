@@ -1,17 +1,39 @@
 /**
  *  SCSS variables
  */
-
+// Color pallete
 $color-a: #fcdc2c;
 $color-b: #fca92c;
 $color-c: #5143de;
 $color-d: #80c7c1;
+$color-e: #f12559;
+
+// Whites
+$white-a: #fff;
+$white-b: #eceef8;
+$white-c: #d0d2d6;
+$white-d: #ddd;
+
+// Blacks
+$black-a: #1d252d;
+$black-b: #505565;
+$black-c: #8c92a6;
+$black-d: #aaa;
 
 $colors: (
   "color-a": $color-a,
   "color-b": $color-b,
   "color-c": $color-c,
   "color-d": $color-d,
+  "color-e": $color-e,
+  "white-a": $white-a,
+  "white-b": $white-b,
+  "white-c": $white-c,
+  "white-d": $white-d,
+  "black-a": $black-a,
+  "black-b": $black-b,
+  "black-c": $black-c,
+  "black-d": $black-d,
 );
 
 // Font Weight

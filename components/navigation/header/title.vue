@@ -1,5 +1,5 @@
 <template>
-  <h1 class="h1-responsive bebas white-a">
+  <h1 :class="classList">
     {{ text }}
   </h1>
 </template>
@@ -11,7 +11,7 @@ export default Vue.extend({
   data() {
     return {
       text: "LUCI'S FOOD HOUSE" as string,
-      classList: '' as string
+      classList: 'h1-responsive bebas text-white-a' as string
     }
   }
 })

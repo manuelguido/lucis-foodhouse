@@ -1,4 +1,13 @@
 /**
+ *  Google fonts
+ */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+/**
  *  Typography
  */
 @import "./variables.scss";
@@ -24,9 +33,9 @@
   }
 }
 
-/*--------------------------------------------------------------
-  Responsive & Size
---------------------------------------------------------------*/
+/**
+ *  Responsive & Size
+ */
 @media (max-width: 331.98px) {
   .h1-responsive {
     font-size: 3rem;
@@ -180,5 +189,43 @@
 
   .h6-responsive {
     font-size: 1.05rem;
+  }
+}
+
+/**
+ *  Font family
+ */
+.bebas {
+  font-family: "Bebas Neue", cursive;
+}
+
+.megrim {
+  font-family: "Megrim", cursive;
+}
+
+.majorm {
+  font-family: "Major Mono Display", monospace;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+/**
+ *  General aspects
+ */
+.title {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.06em;
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 3.3em;
+  }
+}
+@media (max-width: 992px) {
+  .title {
+    font-size: 2.5em;
   }
 }

@@ -1,11 +1,11 @@
 <template>
-  <span class="align-middle">
+  <div class="d-flex flex-row justify-content-center align-items-center p-0">
     <NavigationHeaderSubtitleIcon />
     <h1 :id="id" :class="classList">
       {{ text }}
     </h1>
     <NavigationHeaderSubtitleIcon />
-  </span>
+  </div>
 </template>
 
 <script lang="ts">
@@ -16,26 +16,29 @@ export default Vue.extend({
     return {
       text: 'HAMBURGUESAS GOURMET' as string,
       classList:
-        'sub-title align-middle megrim display-inline w300 mx-2 mx-lg-3 white-b' as string
+        'subtitle megrim fw-500 mx-2 mt-2 mx-lg-3 text-white-b' as string
     }
   }
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.subtitle {
+  line-height: 1;
+}
 @media (min-width: 992px) {
-  .sub-title {
-    font-size: 1.8em;
+  .subtitle {
+    font-size: 2.1rem;
   }
 }
 @media (max-width: 992px) {
-  .ssub-title {
-    font-size: 1.6em;
+  .subtitle {
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 762px) {
-  .ssub-title {
-    font-size: 1.3em;
+  .subtitle {
+    font-size: 1.3rem;
   }
 }
 </style>

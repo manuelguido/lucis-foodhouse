@@ -26,9 +26,10 @@ export default {
     'mdbvue/lib/css/mdb.min.css',
     '@/assets/fonts/iconly/dist/css/style.css',
     '@/assets/fonts/fontawesome/css/all.css',
-    '@/assets/scss/style.scss',
+    '@/assets/scss/_scrollbar.scss',
     '@/assets/scss/_typography.scss',
     '@/assets/scss/_variables.scss',
+    '@/assets/scss/style.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

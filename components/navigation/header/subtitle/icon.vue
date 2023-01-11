@@ -1,5 +1,5 @@
 <template>
-  <i :class="iconClass"></i>
+  <i :class="classList"></i>
 </template>
 
 <script lang="ts">
@@ -12,9 +12,15 @@ export default Vue.extend({
     }
   },
   computed: {
-    iconClass(): string {
-      return `${this.icon} align-middle white-a`
+    classList(): string {
+      return `icon ${this.icon} text-white-a`
     }
   }
 })
 </script>
+
+<style lang="scss" scoped>
+.icon {
+  font-size: 0.8rem;
+}
+</style>
