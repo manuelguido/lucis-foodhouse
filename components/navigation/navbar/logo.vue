@@ -20,19 +20,15 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.small-nav .logo {
-  width: 100px !important;
-}
-
 @media (min-width: 992px) {
   .logo {
-    width: 8rem;
+    width: 6rem;
   }
 }
 
 @media (max-width: 992px) {
   .logo {
-    width: 5rem;
+    width: 4rem;
   }
 }
 </style>

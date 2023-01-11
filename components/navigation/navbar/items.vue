@@ -26,8 +26,8 @@ export default Vue.extend({
           url: '/'
         },
         {
-          name: 'Combos',
-          url: '/combos'
+          name: 'Nuestras hamburguesas',
+          url: '/our-burguers'
         },
         {
           name: 'Contacto',
@@ -38,14 +38,3 @@ export default Vue.extend({
   }
 })
 </script>
-
-<style scoped>
-@media (max-width: 992px) {
-  #main-navbar {
-    background: var(--white-a);
-  }
-  .navbar-toggler-icon {
-    margin-right: 1em;
-  }
-}
-</style>

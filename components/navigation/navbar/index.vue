@@ -47,10 +47,10 @@ export default Vue.extend({
 <style lang="scss" scoped>
 @import '@/assets/scss/_variables';
 
-#main-navbar,
-#main-navbar * {
-  transition: 0.5s all !important;
-}
+// #main-navbar,
+// #main-navbar * {
+//   transition: 0.5s all !important;
+// }
 #main-navbar {
   box-shadow: 0 none !important;
 }
@@ -58,7 +58,6 @@ export default Vue.extend({
 /* Big navbar */
 .big-nav {
   background: rgba(35, 35, 35, 0.16);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 

@@ -29,7 +29,7 @@ import Vue, { PropOptions } from 'vue'
 import { Burger } from '~/interfaces/burger'
 
 export default Vue.extend({
-  name: 'CombosPage',
+  name: 'OurBurguersPage',
   head() {
     return {
       title: 'Nuestras hamburguesas'
