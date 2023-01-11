@@ -1,5 +1,5 @@
 <template>
-  <div class="row content">
+  <div class="row">
     <div class="col-12 text-center">
       <NavigationHeaderTitle />
       <NavigationHeaderSubtitle />
@@ -13,9 +13,3 @@ export default Vue.extend({
   name: 'NavigationHeader'
 })
 </script>
-
-<style scoped>
-.content {
-  padding-top: 10vh !important;
-}
-</style>
