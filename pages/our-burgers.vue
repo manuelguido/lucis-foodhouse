@@ -1,26 +1,24 @@
 <template>
   <div class="combos-page">
     <div class="container-fluid outer-content uns">
-      <LucisHeader />
       <div class="row">
         <div class="col-12 col-lg-6 my-4 my-lg-5 pt-4">
           <CombosText />
-          <VeggieText />
+          <CombosVeggieText />
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <BurgerModal :burger="currentBurguer" />
-      </div>
+      </div> -->
       <div class="row mt-3">
-        <Burguer
-          v-for="b in burgers"
-          :key="b.name"
-          :burger="b"
-          @click.native="currentBurger(b)"
+        <Burger
+          v-for="(burger, i) in burgers"
+          :key="i"
+          :burger="burger"
+          @click.native="currentBurger(burger)"
         />
       </div>
     </div>
-    <LucisFooter />
   </div>
 </template>
 
@@ -94,23 +92,23 @@ export default Vue.extend({
     currentBurger(burger: Burger): void {
       this.currentBurguer = null
       this.currentBurguer = burger
-    },
-    showModal(id: number): void {
-      alert(id)
     }
+    // showModal(id: number): void {
+    //   alert(id)
+    // }
   }
 })
 </script>
 
 <style scoped>
-.container-fluid {
+/* .container-fluid {
   padding: 0 6vw 40px 6vw;
-}
-.table-image {
+} */
+/* .table-image {
   margin-top: -160px;
   margin-right: -60px;
   width: 440px;
-}
+} */
 @media (min-width: 992px) {
   .combo-subtitle {
     font-size: 28px;

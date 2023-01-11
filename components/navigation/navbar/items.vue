@@ -27,7 +27,7 @@ export default Vue.extend({
         },
         {
           name: 'Nuestras hamburguesas',
-          url: '/our-burguers'
+          url: '/our-burgers'
         },
         {
           name: 'Contacto',
