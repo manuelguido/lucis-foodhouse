@@ -1,9 +1,9 @@
 <template>
-  <div class="fw-600">
+  <div>
     <span class="text-white-c">
       {{ text }}
     </span>
-    <TextLink :link="link" />
+    <TextLink :link="link" target=""/>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default Vue.extend({
     return {
       text: '© 2019 Copyright: ',
       link: {
-        route: 'https://lucisfoodhouse.com',
+        route: '/',
         text: 'Lucis Food House'
       }
     }

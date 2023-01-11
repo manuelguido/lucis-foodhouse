@@ -26,15 +26,16 @@ export default Vue.extend({
 
 .link {
   cursor: pointer;
+  color: $color-a !important;
   text-decoration: none;
 }
 
 .link:not(:hover) {
-  color: $color-e;
+  opacity: 0.35;
 }
 
 .link:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .link:active {
