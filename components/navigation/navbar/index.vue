@@ -1,5 +1,5 @@
 <template>
-  <mdb-navbar id="main-navbar" :class="classList" light>
+  <mdb-navbar id="main-navbar" :class="classList" dark>
     <NavigationNavbarLogo />
     <NavigationNavbarItems />
   </mdb-navbar>
@@ -17,7 +17,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      classList: 'px-0 px-lg-5 fixed-top uns' as string
+      classList: 'px-3 px-lg-5 fixed-top uns' as string
     }
   },
   created() {
@@ -44,10 +44,12 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '@/assets/scss/_variables';
+
 #main-navbar,
 #main-navbar * {
-  transition: 0.2s all !important;
+  transition: 0.5s all !important;
 }
 #main-navbar {
   box-shadow: 0 none !important;
@@ -55,7 +57,6 @@ export default Vue.extend({
 
 /* Big navbar */
 .big-nav {
-  /* From https://css.glass */
   background: rgba(35, 35, 35, 0.16);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
@@ -67,11 +68,10 @@ export default Vue.extend({
 
 /* Small navbar */
 .small-nav {
-  /* From https://css.glass */
-background: rgba(35, 35, 35, 0.16);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(20px);
--webkit-backdrop-filter: blur(20px);
+  background: rgba(35, 35, 35, 0.16);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 
   box-shadow: 0 7px 19px 0 rgba(0, 0, 0, 0.02), 0 2px 6px 0 rgba(0, 0, 0, 0.02);
   padding: 0.2rem 0;
@@ -84,14 +84,10 @@ backdrop-filter: blur(20px);
 }
 @media (max-width: 992px) {
   #main-navbar {
-    background: var(--white-a);
-  }
-}
-
-@media (max-width: 992px) {
-  #navbarSupportedContent {
-    background: var(--white-a) !important;
-    border-bottom: 14px solid var(--color-a);
+    background: rgba(35, 35, 35, 0.37);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(18.7px);
+    -webkit-backdrop-filter: blur(18.7px);
   }
 }
 </style>

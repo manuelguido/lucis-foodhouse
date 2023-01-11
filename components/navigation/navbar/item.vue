@@ -18,28 +18,34 @@ export default Vue.extend({
   },
   data() {
     return {
-      classList: 'nav-link bebas mr-5' as string
+      classList: 'nav-link bebas mr-2 mr-lg-5' as string
     }
   }
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '@/assets/scss/_variables';
+
 .nav-link {
-  color: var(--white-a) !important;
+  color: $white-a !important;
   font-weight: 300;
   font-size: 24px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
 .nav-link:hover {
-  color: var(--color-a) !important;
+  color: $color-a !important;
 }
+
 .nav-link:active {
   opacity: 0.5;
 }
 
-.nav-link:last-child {
-  margin-right: 0 !important;
+@media screen and (min-width: 992px) {
+  .nav-link:last-child {
+    margin-right: 0 !important;
+  }
 }
 </style>
