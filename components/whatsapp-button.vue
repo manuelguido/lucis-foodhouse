@@ -21,7 +21,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .float-whatsapp {
-  background-color: var(--seed-success-dark);
+  background-color: #128C7E;
   border-radius: 50px;
   bottom: 3vh;
   box-shadow: 0 0.07em 0.15em 0.1em rgba(0, 0, 0, 0.25) !important;
