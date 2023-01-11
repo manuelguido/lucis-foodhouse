@@ -12,8 +12,8 @@ export default Vue.extend({
     return {
       url: '/' as string,
       outerClass: 'logo-link ml-lg-4' as string,
-      imageClass: 'logo' as string,
-      image: require('~/assets/img/logo-white.png') as File
+      imageClass: 'logo m-3' as string,
+      image: require('~/assets/img/lucis-logo-small.png') as File
     }
   }
 })
@@ -26,19 +26,13 @@ export default Vue.extend({
 
 @media (min-width: 992px) {
   .logo {
-    width: 150px;
+    width: 8rem;
   }
 }
 
 @media (max-width: 992px) {
   .logo {
-    margin-left: 1em;
-  }
-}
-
-@media (max-width: 992px) {
-  .logo {
-    width: 95px;
+    width: 5rem;
   }
 }
 </style>
