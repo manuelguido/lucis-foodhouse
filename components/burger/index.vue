@@ -57,7 +57,8 @@ export default Vue.extend({
   cursor: pointer;
   transition: 0.2s all;
   border-radius: 16px;
-  padding: 1rem;
+  padding: 0.5rem;
+  text-align: center;
 }
 .burger:hover {
   @include glassWhiteLight;
