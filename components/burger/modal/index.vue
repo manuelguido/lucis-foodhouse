@@ -1,6 +1,6 @@
 <template>
-  <div v-if="show_burger != null" class="modal">
-    <div class="modal-content">
+  <div v-if="show_burger != null" class="modal" @click="hideModal">
+    <div class="modal-content" @click="handleClick">
       <div class="row">
         <!-- <div class="col-12 text-right">
           <div class="close" @click="hideModal">&times;</div>
@@ -48,11 +48,11 @@ export default Vue.extend({
     }
   },
   methods: {
+    handleClick(event: Event) {
+      event.stopPropagation()
+    },
     hideModal(event: Event): void {
-      if (event) {
-        this.show_burger = null
-        // this.burger = null
-      }
+      this.show_burger = null
     }
   }
 })
@@ -84,15 +84,24 @@ export default Vue.extend({
   padding: 2rem;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .modal-content {
-    width: 70%;
+    width: 50%;
   }
   .burger-title {
-    font-size: 3.6em;
+    font-size: 3.5em;
   }
 }
-@media (max-width: 992px) {
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .modal-content {
+    width: 65%;
+  }
+  .burger-title {
+    font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 992px) {
   .modal-content {
     width: 95%;
   }
