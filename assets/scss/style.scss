@@ -44,22 +44,29 @@ body {
   user-select: none;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+  .main-padding {
+    padding-left: 21vw !important;
+    padding-right: 21vw !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .web-hide {
     display: none !important;
   }
   .main-padding {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 11vw !important;
+    padding-right: 11vw !important;
   }
 }
+
 @media screen and (max-width: 992px) {
   .mobile-hide {
     display: none !important;
   }
   .main-padding {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 4vw !important;
+    padding-right: 4vw !important;
   }
 }
-
