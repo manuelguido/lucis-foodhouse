@@ -44,21 +44,22 @@ body {
   user-select: none;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .web-hide {
     display: none !important;
   }
   .main-padding {
-    padding-left: 10vw !important;
-    padding-right: 10vw !important;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .mobile-hide {
     display: none !important;
   }
   .main-padding {
-    padding-left: 4vw !important;
-    padding-right: 4vw !important;
+    padding-left: 4vw;
+    padding-right: 4vw;
   }
 }
+
