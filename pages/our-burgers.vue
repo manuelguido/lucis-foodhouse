@@ -8,14 +8,18 @@
         </div>
       </div>
       <div class="row">
-        <BurgerModal :burger="currentBurguer" />
+        <BurgerModal
+          v-if="currentBurger"
+          :burger="currentBurger"
+          @modal:close="unsetBurger"
+        />
       </div>
       <div class="row">
         <Burger
           v-for="(burger, i) in burgers"
           :key="i"
           :burger="burger"
-          @click.native="currentBurger(burger)"
+          @click.native="setCurrentBurger(burger)"
         />
       </div>
     </div>
@@ -35,7 +39,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      currentBurguer: null as Burger | null,
+      currentBurger: null as Burger | null,
       veggieText: 'Todos los combos vienen en versión veggie' as string,
       burgers: <PropOptions<Burger[]>>[
         {
@@ -120,12 +124,12 @@ export default Vue.extend({
     }
   },
   methods: {
-    currentBurger(burger: Burger): void {
-      this.currentBurguer = null
-      this.currentBurguer = burger
-      this.showModal(burger.id)
+    setCurrentBurger(burger: Burger): void {
+      this.currentBurger = burger
     },
-    showModal(id: number): void {}
+    unsetBurger() {
+      this.currentBurger = null
+    }
   }
 })
 </script>

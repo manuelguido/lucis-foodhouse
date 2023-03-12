@@ -1,21 +1,21 @@
 <template>
-  <div v-if="show_burger != null" class="modal" @click="hideModal">
+  <div v-if="burger != null" class="modal" @click="hideModal">
     <div class="modal-content" @click="handleClick">
       <div class="row">
         <!-- <div class="col-12 text-right">
           <div class="close" @click="hideModal">&times;</div>
         </div> -->
         <div class="col-12 col-md-7 col-lg-6 col-xl-5 mb-5 mb-md-0">
-          <BurgerImage :path="show_burger.image" />
+          <BurgerImage :path="burger.image" />
         </div>
 
         <div class="col-12 col-md-5 col-lg-6 col-xl-7">
           <div class="d-flex justify-content-between align-items-top mb-4">
-            <BurgerTitle :text="show_burger.name" />
+            <BurgerTitle :text="burger.name" />
             <BurgerModalClose @click.native="hideModal" />
           </div>
           <div class="d-flex">
-            <BurgerIngredients :ingredients="show_burger.ingredients" />
+            <BurgerIngredients :ingredients="burger.ingredients" />
           </div>
         </div>
       </div>
@@ -36,23 +36,12 @@ export default Vue.extend({
       default: null
     } as PropOptions<Burger>
   },
-  data() {
-    return {
-      show_burger: null as Burger | null
-    }
-  },
-  watch: {
-    burger() {
-      this.show_burger = this.burger
-      // console.log('actual: ' + this.burger.name + ' d: ' + this.show_burger)
-    }
-  },
   methods: {
     handleClick(event: Event) {
       event.stopPropagation()
     },
     hideModal(event: Event): void {
-      this.show_burger = null
+      this.$emit('modal:close', true)
     }
   }
 })
