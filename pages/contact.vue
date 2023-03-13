@@ -1,6 +1,6 @@
 <template>
-  <ViewImageBackground>
-    <div class="d-flex flex-column">
+  <ViewImageBackground center>
+    <div class="inner main-padding">
       <div class="row mb-5">
         <div class="col-12 mb-md-5">
           <NavigationHeader />
@@ -15,8 +15,8 @@
           <ViewContactLocation />
         </div>
       </div>
-      <NavigationFooter />
     </div>
+    <NavigationFooter />
   </ViewImageBackground>
 </template>
 
@@ -37,6 +37,12 @@ export default Vue.extend({
 #contact-page a.item:hover {
   color: var(--color-a);
 }
+
+.inner {
+  width: 100vw;
+
+}
+
 .mapouter {
   height: 40vh;
   position: relative;
