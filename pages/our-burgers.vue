@@ -119,6 +119,19 @@ export default Vue.extend({
             'Lechuga'
           ],
           image: 'yeti.png'
+        },
+                {
+          id: 8,
+          name: 'Halloween',
+          ingredients: [
+            'Carne (x2)',
+            'Queso americano (x2)',
+            'Doble panceta',
+            'Cebolla caramelizada',
+            'Coleslaw',
+            'Lechuga'
+          ],
+          image: 'halloween.webp'
         }
       ]
     }
