@@ -59,7 +59,7 @@ export default Vue.extend({
           id: 2,
           name: 'Cheese',
           ingredients: ['Carne', 'Cheddar', 'Pepinillos', 'Tomate', 'Kétchup'],
-          image: 'cheese.webp'
+          image: 'cheese.png'
         },
         {
           id: 3,
@@ -72,7 +72,7 @@ export default Vue.extend({
             'Pepinillos',
             'Rúcula'
           ],
-          image: 'pampeana.webp'
+          image: 'pampeana.png'
         },
         {
           id: 4,
@@ -103,7 +103,7 @@ export default Vue.extend({
             'BBQ',
             'Lechuga'
           ],
-          image: 'pesadilla.webp'
+          image: 'pesadilla.png'
         },
         {
           id: 7,
@@ -120,8 +120,19 @@ export default Vue.extend({
           ],
           image: 'yeti.png'
         },
-                {
+        {
           id: 8,
+          name: 'Land of provolon',
+          ingredients: [
+            'Carne',
+            'Queso provoleta (Santa Rosa)',
+            'Lechuga',
+            'Tomate'
+          ],
+          image: 'provolon.png'
+        },
+        {
+          id: 9,
           name: 'Halloween',
           ingredients: [
             'Carne (x2)',
