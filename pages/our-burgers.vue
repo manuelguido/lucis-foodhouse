@@ -53,7 +53,7 @@ export default Vue.extend({
             'Cebolla morada',
             'Lechuga'
           ],
-          image: 'clasica.webp'
+          image: 'clasica.png'
         },
         {
           id: 2,
@@ -85,7 +85,7 @@ export default Vue.extend({
             'Cebolla morada',
             'Lechuga.'
           ],
-          image: 'blucis.webp'
+          image: 'blucis.png'
         },
         {
           id: 5,
@@ -118,7 +118,7 @@ export default Vue.extend({
             'BBQ',
             'Lechuga'
           ],
-          image: 'yeti.webp'
+          image: 'yeti.png'
         }
       ]
     }
