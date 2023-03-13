@@ -40,19 +40,5 @@ export default Vue.extend({
 
 .inner {
   width: 100vw;
-
-}
-
-.mapouter {
-  height: 40vh;
-  position: relative;
-  text-align: left;
-  width: 100%;
-}
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  width: 80%;
-  height: 100%;
 }
 </style>
