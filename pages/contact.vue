@@ -34,10 +34,6 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-#contact-page a.item:hover {
-  color: var(--color-a);
-}
-
 .inner {
   width: 100vw;
 }
