@@ -91,7 +91,7 @@ export default Vue.extend({
           id: 5,
           name: 'Mario bros',
           ingredients: ['Carne', 'Hongos', 'Cebolla caramelizada', 'Lechuga'],
-          image: 'mario.webp'
+          image: 'mario.png'
         },
         {
           id: 6,
